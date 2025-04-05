@@ -1,0 +1,92 @@
+<html>
+    <style>
+        body{
+            background-image: url("pics/fbbg7.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .feedback-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a97777c2;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: fantasy;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #355137af;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: fantasy;
+}
+input[type="submit"]:hover {
+    background-color:  #739b75;
+   }
+p{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
+#home{
+    position: relative;
+    bottom: 550px;
+    left:20px;
+    background-color: #33333382;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px;
+    font-family: fantasy;
+    width: 75px;
+    transition: background-color 0.3s;
+}
+#home:hover{
+   background-color: #3c3b3fd3; 
+}
+#fb{
+            text-align: center;
+            font-family: fantasy;
+            display: none;
+        }
+</style>
+
+<body>
+<div class="feedback-container">
+    <h2>Feedback</h2>
+    <form id="feedback-form" onsubmit="submitFeedback(event)">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="feedback">Your feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="feed.js"></script>
+</body>
+<div id="home"><a style="text-decoration: none;color: black;font-size: 30px;"href="login.html">Home</a></div>
+<p id="fb" style="font-family: fantasy;">Thank you for your feedback.... :)))</p>
+</html>

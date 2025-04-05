@@ -1,0 +1,224 @@
+<html>
+    <head>
+    <title>lets draw!!</title>
+    </head>
+    <style>
+        body{
+           background-image: url("pics/doodle.avif"); 
+           /*background-repeat: no-repeat; 
+           background-size: cover;    */  
+        }
+        #p{
+            padding: 20px;
+            font-size: 20px;
+            font-family: Fantasy;
+            background-color: rgba(0, 0, 0, 0.671);
+            width:30%;
+            box-shadow:0px 2px 5px #503535;
+            color: white;
+            border-radius: 5px;
+            word-spacing: 3px;
+            margin:0%;
+        }
+        
+        #hello{
+            padding: 1px;
+            font-style:normal;
+            text-shadow:5px 3px 3px ;
+            color: #16305c;
+        }
+
+        #h{
+         text-shadow: 1px 5px 3px #1f4b96;
+         text-align: center;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         position: relative;
+         padding-left:40px;
+         padding-top:40px;
+         
+        }
+        
+     .mask1 
+     {
+     width: 100%;
+     height: 100%;
+     overflow: scroll;
+     }
+     .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(172, 114, 114);
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 595px;
+  top: 1400px;
+  }
+.button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+.button a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0.5;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover a {
+  padding-right: 50px;
+  color:#4f3939;
+  
+}
+.button:hover a:after {
+  opacity: 1;
+  right: 0;
+  }
+#img{
+    position: relative;
+    padding-left:250px ;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.containers{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+#ready{
+text-decoration: none;
+color: #000000;
+padding-bottom: 100px;
+font-family:fantasy;
+padding-top: 15px;
+}
+@keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+       #gif1 {
+            animation: rotate 4s linear infinite;
+            position: relative;
+            left:-500px;
+            top:-600px;
+            z-index: -1;
+            
+        }
+        #gif2{
+            animation: rotate 4s linear infinite;
+            position: relative;
+            right:-500px;
+            top:-200px;
+            z-index: -1;
+        }
+        #gif3{
+            position: relative;
+            right:-500px;
+            top:-600px;
+            z-index: -1;
+         }
+         #gif4{
+            position: relative;
+            right:-700px;
+            top:-1200px;
+            z-index: -1;
+         }
+         #gif5{
+            position: relative;
+            right:-900px;
+            top:-970px;
+            z-index: -1;
+         }
+       #gif6{
+        position: relative;
+            right:-200px;
+            top:-940px;
+            z-index: -1;
+       }
+       #gif7{
+        position: relative;
+            right:-1200px;
+            top:-1600px;
+            z-index: -1;
+       }
+       .feedback {
+        text-align: center;
+        margin-top: 0px;
+         font-size: 18px;
+         position: relative;
+         bottom:500px;
+         font-family: fantasy;
+         font-size: 50px;
+        }
+
+       .feedback a {
+       color: rgb(140, 79, 79);
+        text-decoration:double;
+}
+.feedback a:hover {
+  color: rgba(159, 88, 88, 0.556);
+}
+</style>
+      <body>
+        
+            <div class="container">
+            <div id="img"><img src="icon.png"></div>
+            <div id="h" style="font-size: 150px;">Skribbl .io</div>
+      </div>
+        <hr>
+       <div class="containers">
+            
+        <p id="hello" style="padding-top: 50px;font-size:60px;">Hellooo..!!!</p>
+
+
+            <div id="p">
+                 Do you ever find yourself doodling on the margins of your notebook, creating whimsical 
+                 creatures or intricate patterns? Imagine a canvas where your creativity knows no bounds,
+                 where your doodles can transform into masterpieces. With just a few clicks and strokes, 
+                 you can unleash your inner artist and turn a blank canvas into a vibrant work of art. 
+                 So, grab your virtual paintbrush and let your imagination run wild!
+            </div>
+            <div id="gif1"> <img src="pics/pencil.png" width="90px"height="80px" style="margin: 0%;"></div>
+            <div id="gif2"> <img src="pics/paintbrush.png" width="90px"height="80px" style="margin: 0%;"></div>
+            <div id="gif1"> <img src="pics/splash.png" width="90px"height="80px"style="margin: 0%;"></div>
+            <div id="gif2"> <img src="pics/splash.png" width="90px"height="80px" style="margin: 0%;"></div>
+            <div id="p" style="margin: 0%; position: relative;bottom: 300px;">
+                 Drawing on a canvas isn't just about creating something beautiful; it's about expressing
+                 yourself and capturing a moment in time. Whether you're sketching a portrait, designing a 
+                 logo, or simply scribbling for fun, each stroke tells a story. So, let your creativity flow 
+                 freely on the canvas, and who knows, your next masterpiece could be just a doodle away!
+            </div>
+        </div>
+        <div id="gif3"> <img src="pics/paint-roller.png" width="100px"height="90px"></div>
+        <div id="gif4"> <img src="pics/splash (2).png" width="90px"height="80px"></div>
+        <div id="gif5"> <img src="pics/painting-palette.png" width="90px"height="80px"></div>
+        <div id="gif6"> <img src="pics/paint.png" width="90px"height="80px"></div>
+        <div id="gif7"> <img src="pics/paint.png" width="200px"height="150px"></div>
+     <button class="button" style="vertical-align:middle ;position: absolute;bottom: -200px;"><span><a id="ready"href="theme.html">Let's go</a></span></button>
+     <div class="feedback">
+       <a href="feedback.html">Give Feedback</a></div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+    <style>
+        body{
+            background-image: url("pics/fbbg.jpeg");
+         background-repeat: no-repeat;
+         background-size: cover;
+        }
+#t{
+   font-family: fantasy; 
+   margin-top: 70px;
+   text-align: center;
+   font-size: 40px;
+}
+#h{
+         text-shadow: 2px 5px 3px #1f4b96;
+         text-align: center;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         position: relative;
+         padding-left:40px;
+         padding-top:40px;
+         
+        }
+        .contain{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            margin-top: 250px;
+        }
+        #canvas{
+            border: 5px solid #b6b2b3;
+            cursor:pointer;
+            background-color: #ffffff;
+             border-radius: 15px;
+             width: 200px;
+             height: 100px;
+             margin-right: 70px;
+             box-shadow: 4px 5px rgba(0, 0, 0, 0.51);
+             
+        }
+        @keyframes example {
+            from {width: 200px;
+             height: 100px;}
+            to {width: 260px;
+             height: 120px;}
+        }
+        #canvas1{
+            border: 5px solid #b6b2b3;
+            cursor:pointer;
+            background-color: #080808;
+             border-radius: 15px;
+             width: 200px;
+             height: 100px;
+             margin-right: 70px;
+             box-shadow: 4px 5px rgba(0, 0, 0, 0.51);
+        }
+        #canvas:hover
+        {
+            animation-name: example;
+            animation-duration: 1s;
+        }
+        #canvas1:hover
+        {
+            animation-name: example;
+            animation-duration: 1s;
+        }
+        #canvas2:hover
+        {
+            animation-name: example;
+            animation-duration: 1s;
+        }
+        #canvas2{
+            border: 5px solid #b6b2b3;
+            cursor:pointer;
+            background-image: url("pics/can2bg.avif");
+             border-radius: 15px;
+             width: 200px;
+             height: 100px;
+             box-shadow: 4px 5px rgba(0, 0, 0, 0.51);
+        }
+        #canvas:hover{
+            border: 5px solid #686162;
+        }
+        #canvas1:hover{
+            border: 5px solid #686162;
+        }
+        #canvas2:hover{
+            border: 5px solid #686162;
+        }
+        #back{
+            width: 60px;height: 60px;
+            
+        }
+        
+
+    </style>
+    <body>
+        <a href="login.html"><div id="back"><img style="width: 60px;height: 60px;" src="pics/left.png"></div></a>
+        <div id="h" style="font-size: 95px;">Skribbl .io</div>
+        <h2 id="t">Select your fav theme <span style="margin-left: 15px;">:)</span></h2>
+        <div class="contain">
+            <a href="canvas.html"><div id="canvas"></div></a>
+            <a href="canvas1.html"><div id="canvas1"></div></a>
+            <a href="canvas2.html"><div id="canvas2"></div></a>
+        </div>
+        
+    </body>
+</html>

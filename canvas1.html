@@ -1,0 +1,116 @@
+<html>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url("pics/bg.png");
+}
+#canvas {
+    border: 5px solid #b6b2b3;
+    cursor:crosshair;
+    background-color: #030303ef;
+    border-radius: 15px;
+    width: 90%;
+    height: 85%;
+}
+#controls {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    }
+#home{ 
+    text-align: center;
+    background-color: #333333d6;
+    padding: 10px;
+    margin-top: 80px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px;
+    font-family: fantasy;
+    transition: background-color 0.3s;
+    width: 80px;height:40px;
+ }
+#home:hover{
+    background-color: #333333; }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#undoButton {
+    background-color: #954334b4; 
+    color: rgb(5, 5, 5); 
+    padding: 8px 10px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px;
+    font-family: fantasy;
+    text-transform: uppercase; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s;
+}
+
+#undoButton:hover {
+    background-color: #954334ef; 
+}
+#colorPicker {
+    width: 50px;
+    height: 50px;
+    border: none;
+   cursor: pointer;
+}
+p{
+    font-family: fantasy;
+    font-size: 25px;
+}
+#back{
+ 
+    position: relative;right: 680px;
+   bottom: 50px;
+  
+}
+/*#back:hover{
+    background-color: #20202264;
+   border-radius: 15px;
+}*/
+#print{
+    position: relative;
+    left:640px;
+    top:140px 
+}
+#pbtn{
+    background-color: #5ba543bc;
+    font-family: fantasy;
+    width: 90px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer; 
+    text-transform: uppercase; 
+}
+#pbtn:hover{
+    background-color: #395530bb;
+}
+</style>
+<body>
+<div class="wrapper">
+   
+    <div  id="print"><button id="pbtn" onclick="window.print()">save</button></div>
+    <div id="home"><a style="text-decoration: none;color: black;font-size: 30px;"href="login.html">Home</a></div>
+
+    <a href="theme.html"><div id="back"><img style="width: 50px;height:50px;"src="pics/left.png"></div></a>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <p>Color:</p><input type="color" id="colorPicker" style="margin-right: 500px;margin-left: 0px;">
+        <p>Size:</p><input type="range" id="brushSize" style="margin-right: 500px;" min="1" max="50" value="10">
+        <button id="undoButton" style="margin-right: 85px;height: 50px;">Undo</button>
+        </div>
+</div>
+<script src="script.js"></script>
+    </body>
+</html>
